@@ -4,13 +4,20 @@
   "research_only": true,
   "market_phase": "MARKET_OPEN",
   "status": "CAPTURED",
-  "checked_at_utc": "2026-10-09T19:15:13.557474+00:00",
-  "last_success_utc": "2026-10-09T19:15:13.557474+00:00",
+  "checked_at_utc": "2026-10-09T19:24:52.155373+00:00",
+  "last_success_utc": "2026-10-09T19:24:52.155373+00:00",
   "last_success_market_date": "2026-10-09",
   "last_success_contracts": 1346,
   "last_success_age_minutes": 0,
   "source": "YFINANCE_CORROBORATION",
   "quote_freshness_verified": false,
   "post_close_paper_archive_independent": true,
+  "market_summary": {
+    "underlying_price": 751.73,
+    "eligible_call_contracts": 538,
+    "median_relative_spread_pct": 1.45,
+    "median_implied_volatility_pct": 20.82,
+    "eligible_expiration_count": 4
+  },
   "warning": "Intraday visibility only; provider data may be delayed. No verified quote age, fills, trading authority or paper-book use."
 }
