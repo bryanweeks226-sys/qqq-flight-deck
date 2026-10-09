@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "execution_authorized": false,
+  "research_only": true,
+  "market_phase": "MARKET_OPEN",
+  "status": "CAPTURED",
+  "checked_at_utc": "2026-10-09T19:15:13.557474+00:00",
+  "last_success_utc": "2026-10-09T19:15:13.557474+00:00",
+  "last_success_market_date": "2026-10-09",
+  "last_success_contracts": 1346,
+  "last_success_age_minutes": 0,
+  "source": "YFINANCE_CORROBORATION",
+  "quote_freshness_verified": false,
+  "post_close_paper_archive_independent": true,
+  "warning": "Intraday visibility only; provider data may be delayed. No verified quote age, fills, trading authority or paper-book use."
+}
