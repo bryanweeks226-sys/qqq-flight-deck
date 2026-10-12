@@ -1,0 +1,16 @@
+name: Flight Deck UI safety tests
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check mobile HTML and fail-closed behavior
+        run: node tests/flight-deck.test.cjs
