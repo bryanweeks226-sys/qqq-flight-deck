@@ -4,9 +4,12 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+permissions:
+  contents: read
 jobs:
   verify:
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -14,3 +17,5 @@ jobs:
           node-version: '22'
       - name: Check mobile HTML and fail-closed behavior
         run: node tests/flight-deck.test.cjs
+      - name: Check published dashboard JSON contract
+        run: node tests/public-data.test.cjs
