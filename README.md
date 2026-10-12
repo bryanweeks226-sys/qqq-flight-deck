@@ -10,9 +10,9 @@ On an iPhone, open the deployed HTTPS URL in Safari, then use Share → Add to H
 
 ## Data contract and safety
 
-The primary JSON inputs are `data/shadow_live_latest.json` and `data/position_transition_plan.json`. Additional public research feeds enrich the dashboard. The primary shadow feed must explicitly report `execution_authorized: false`, synchronized inputs, an expected market session matching its reported market date, a finite nonnegative exposure, and a valid recently generated timestamp. Otherwise the app shows an unverified/stale warning and withholds the headline exposure and tactical state.
+The primary JSON inputs are `data/shadow_live_latest.json` and `data/position_transition_plan.json`. Additional public research feeds enrich the dashboard. The primary shadow feed must explicitly report `execution_authorized: false`, synchronized inputs, an expected market session matching its reported market date, a finite nonnegative exposure, and a valid recently generated timestamp. Otherwise the app shows an unverified/stale warning and withholds the headline exposure and tactical state. Valid but delayed publications are separately labeled **PUBLICATION DELAY — VERIFY**; they are still withheld from the current headline.
 
-The current client-side timestamp limit is 36 hours from `generated_at_utc`. This is an operational freshness limit, **not** a trading-session calendar; weekends, holidays, missed schedules, and market closures require careful review. Never equate a green UI with permission to trade.
+The current client-side timestamp limit is 36 hours from `generated_at_utc` for displaying **CURRENT**. A valid but older publication is labeled **PUBLICATION DELAY — VERIFY**, rather than treated as malformed. This is an operational freshness limit, **not** a trading-session calendar; weekends, holidays, missed schedules, and market closures require careful review. Never equate a green UI with permission to trade.
 
 ## Checks before and after deployment
 
