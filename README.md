@@ -31,3 +31,5 @@ The current client-side timestamp limit is 36 hours from `generated_at_utc` for 
 - **No Actions checks:** Verify Actions is enabled and the workflow has run; GitHub's combined commit status may be empty even when Actions exists.
 
 The private `qqq-trader` engine owns strategy validation, research parameters, and publication. This public repository is presentation-only. Never publish credentials, brokerage identifiers, or private portfolio records here.
+
+CI re-verification: documentation-only pull request to exercise both checks after the corrected transition-plan assertion.
